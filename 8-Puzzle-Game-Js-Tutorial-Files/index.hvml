@@ -1,0 +1,48 @@
+<!DOCTYPE hvml>
+<hvml target="html" script="python" lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>数字华容道</title>
+
+        <init as="list_items">
+            [
+            {"id": "li0", "letters": "1"},
+            {"id": "li1", "letters": "2"},
+            {"id": "li2", "letters": "3"},
+            {"id": "li3", "letters": "4"},
+            {"id": "li4", "letters": "5"},
+            {"id": "li5", "letters": "6"},
+            {"id": "li6", "letters": "7"},
+            {"id": "li7", "letters": "8"},
+            {"id": "li8", "letters": ""},
+            ]
+        </init>
+    </head>
+
+    <body onload="setUp()">
+        <h1>数字华容道</h1>
+        <div id="modal" class="hide">
+            <div id="header">
+                <button id="closeButton">x</button>
+            </div>
+            <h1 id="message">You won!</h1>
+        </div>
+        <div id="container">
+            <archetype id="list_item">
+                <li id="$?.id">$?.letters</li>
+            </archetype>
+            <ul>
+                <iterator on="$list_items" with="list_item" to="append">
+                    <error>
+                        <p>Bad data!</p>
+                    </error>
+                </iterator>
+            </ul>
+        </div>
+
+    </body>
+    <script src="js/script.js"></script>
+
+</hvml>
