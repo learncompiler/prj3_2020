@@ -8,15 +8,15 @@
 
         <init as="list_items">
             [
-            {"id": "li0", "letters": "1", "class": ""},
-            {"id": "li1", "letters": "2", "class": ""},
-            {"id": "li2", "letters": "3", "class": ""},
-            {"id": "li3", "letters": "4", "class": ""},
-            {"id": "li4", "letters": "5", "class": ""},
-            {"id": "li5", "letters": "6", "class": ""},
-            {"id": "li6", "letters": "7", "class": ""},
-            {"id": "li7", "letters": "8", "class": ""},
-            {"id": "li8", "letters": "", "class": "empty"},
+                {"id": "li0", "letters": "1", "class": ""},
+                {"id": "li1", "letters": "2", "class": ""},
+                {"id": "li2", "letters": "3", "class": ""},
+                {"id": "li3", "letters": "4", "class": ""},
+                {"id": "li4", "letters": "5", "class": ""},
+                {"id": "li5", "letters": "6", "class": ""},
+                {"id": "li6", "letters": "7", "class": ""},
+                {"id": "li7", "letters": "8", "class": ""},
+                {"id": "li8", "letters": "", "class": "empty"},
             ]
         </init>
     </head>
