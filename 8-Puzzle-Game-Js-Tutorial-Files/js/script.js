@@ -55,7 +55,6 @@ const isCorrect = () => {
 
 const fillGrid = (letters) => {
     let shuffled = shuffle(letters);
-    // shuffle the letters arraay until there is a combination that is solvable
     while (!isSolvable(shuffled)) {
         shuffled = shuffle(letters);
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE hvml>
-<hvml target="html" script="python" lang="en">
+<hvml target="html" script="python" lang="zh-cn">
 
     <head>
         <meta charset="UTF-8">
@@ -8,20 +8,20 @@
 
         <init as="list_items">
             [
-            {"id": "li0", "letters": "1"},
-            {"id": "li1", "letters": "2"},
-            {"id": "li2", "letters": "3"},
-            {"id": "li3", "letters": "4"},
-            {"id": "li4", "letters": "5"},
-            {"id": "li5", "letters": "6"},
-            {"id": "li6", "letters": "7"},
-            {"id": "li7", "letters": "8"},
-            {"id": "li8", "letters": ""},
+            {"id": "li0", "letters": "1", "class": ""},
+            {"id": "li1", "letters": "2", "class": ""},
+            {"id": "li2", "letters": "3", "class": ""},
+            {"id": "li3", "letters": "4", "class": ""},
+            {"id": "li4", "letters": "5", "class": ""},
+            {"id": "li5", "letters": "6", "class": ""},
+            {"id": "li6", "letters": "7", "class": ""},
+            {"id": "li7", "letters": "8", "class": ""},
+            {"id": "li8", "letters": "", "class": "empty"},
             ]
         </init>
     </head>
 
-    <body onload="setUp()">
+    <body>
         <h1>数字华容道</h1>
         <div id="modal" class="hide">
             <div id="header">
@@ -31,7 +31,7 @@
         </div>
         <div id="container">
             <archetype id="list_item">
-                <li id="$?.id">$?.letters</li>
+                <li id="$?.id" class="$?.class">$?.letters</li>
             </archetype>
             <ul>
                 <iterator on="$list_items" with="list_item" to="append">
@@ -41,8 +41,6 @@
                 </iterator>
             </ul>
         </div>
-
     </body>
-    <script src="js/script.js"></script>
 
 </hvml>
